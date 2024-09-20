@@ -6,9 +6,12 @@ import Footer from "./layout/Footer";
 import { useEffect } from "react";
 const Home = () => {
   useEffect(() => {
+    window.scrollTo(0, 0)
     const header = document.querySelector("header");
     const logotext = document.querySelector(".header h1 ");
     const logo = document.querySelector(".logo");
+
+    
 
     window.addEventListener("scroll", () => {
       header.classList.toggle("sticky", window.scrollY > 0);
@@ -66,7 +69,6 @@ const Home = () => {
       <Packages />
       <About />
       <Contact />
-      <Footer />
     </>
   );
 };

@@ -1,8 +1,16 @@
+import { useEffect } from "react";
 import "../assets/css/accomodation.css";
+import Header from "./layout/Header";
 
 const Accomodation = () => {
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <>
+    <Header />
       <div>
         <div className="review-bodyelements">
           <div className="review-main">
@@ -518,7 +526,6 @@ const Accomodation = () => {
         </div> 
       </div>
       
-     
     </>
   );
 };

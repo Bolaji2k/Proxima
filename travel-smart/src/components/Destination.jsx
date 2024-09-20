@@ -1,6 +1,5 @@
 import { memo, useEffect } from "react";
 import Header from "./layout/Header";
-import Footer from "./layout/Footer"
 import { useNavigate } from 'react-router-dom';
 
 const Destination = () => {
@@ -24,6 +23,7 @@ const Destination = () => {
   };
 
   useEffect(() => {
+    window.scrollTo(0, 0)
     const card = document.querySelectorAll(".things-to-do-card-accomodations");
     card.forEach((element) => {
       element.onclick = () => {
@@ -330,7 +330,6 @@ const Destination = () => {
           </div>
         </div>
       </section>
-      <Footer />
     </>
   );
 };
