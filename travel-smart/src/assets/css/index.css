@@ -32,7 +32,6 @@
     display: flex;
     align-items: center;
     gap: 5px;
-    /* color: #046aae; */
     color: #ffffff;
     font-size: 24px;
   }
@@ -57,6 +56,11 @@
     background: url("../images/home.jpg") no-repeat center center/cover;
     height: 100vh;
   }
+
+  .global-header {
+    background-image: none;
+    height: 60px;
+  }
   
   header {
     background-color: transparent;
@@ -68,6 +72,7 @@
     width: 100%;
     align-items: center;
     justify-content: center;
+    z-index: 999;
     transition: ease 0.4s;
   }
   
@@ -286,30 +291,14 @@
     color: #333;
   }
   
-  #destinations {
+  #packages {
     padding: 50px 0;
   }
-  
-  .destination-grid {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
+
+  #packages img {
+    border-radius: 8px;
   }
   
-  .destination-card {
-    background-color: #fff;
-    padding: 20px;
-    margin: 10px;
-    width: 22%;
-    text-align: center;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  }
-  
-  .destination-card img {
-    width: 100%;
-    border-radius: 10px;
-  }
   
   footer {
     background-color: #f0f1f1;
@@ -497,3 +486,131 @@
     gap: 2%;
   }
   
+
+  #destination {
+    padding: 50px 0;
+  }
+
+  #destination img {
+    margin: 20px 0;
+    width: 100%;
+    border-radius: 8px;
+  }
+
+  .destination-info p {
+    width: 50%;
+    font-size: 13px;
+  }
+
+  .welcome-video {
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+  }
+  .welcome-video iframe {
+    border-radius: 8px;
+  }
+
+  .mt {
+    margin-top: 40px;
+  }
+  .things-to-do h2 {
+    padding-bottom: 20px;
+  }
+
+  .things-to-do-image {
+    background-size: "cover";
+    background-position: "center";
+    height: 260px;
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 10px;
+  }
+
+  
+  .heart-icon-container div {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+  }
+  .heart-icon-container div:hover {
+    background-color: #f1f1f1;
+  }
+  .heart-icon-container i {
+    color: #ffffff;
+    font-size: 20px;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: rgb(0, 0, 0);
+  }
+
+  .heart-icon-container {
+    display: flex;
+    justify-content: right;
+  }
+
+  .gray {
+    color: #808080;
+  }
+
+  .yellow {
+    color: #ffcd04;
+  }
+  
+  .things-to-do-card p {
+    font-size: 13px;
+    color: #383737;
+  }
+  .things-to-do-card-accomodations p {
+    font-size: 13px;
+    color: #383737;
+  }
+
+  .things-to-do-card {
+    width: 32%;
+    margin-bottom: 10px;
+    cursor: pointer;
+  }
+  .things-to-do-card-accomodations {
+    width: 32%;
+    margin-bottom: 10px;
+    cursor: pointer;
+  }
+
+
+  .things-to-do-image:hover {
+    filter: brightness(50%);
+    z-index: -1;
+  }
+
+  .card-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+
+  .stays h2 {
+    margin-bottom: 20px;
+  }
+
+  .info-section i {
+    padding-left: 10px;
+  }
+
+  .info-section  {
+    padding-bottom: 10px;
+  }
+
+  .transport-options {
+    display: flex;
+  }
+
+  .w-50 {
+    width: 50%;
+  }

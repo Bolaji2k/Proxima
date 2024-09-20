@@ -22,12 +22,12 @@ const Explore = () => {
         <div id="search-bar">
           <div className="input">
             <label htmlFor="destination">Where?</label>
-            <input type="text" placeholder="search destination" id="destination" />
+            <input type="text" placeholder="search destination" />
           </div>
           <div className="search-stroke"></div>
           <div className="input">
             <label htmlFor="tour">Tour or Event?</label>
-            <input type="text" placeholder="search tour event" id="tour" />
+            <input type="text" placeholder="search tour event"  />
           </div>
 
           <button>
