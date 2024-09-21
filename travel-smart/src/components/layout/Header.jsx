@@ -1,5 +1,6 @@
 import { useEffect } from "react";
 import { memo } from "react";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   const search = () => {
@@ -13,17 +14,17 @@ const Header = () => {
       <header className="sticky">
         <div className="container">
           <div className="header">
-            <h1 className="primary-color">
+           <Link to="/"> <h1 className="primary-color">
               <i className="logo alternate-logo"></i>
               TravelSmart
-            </h1>
+            </h1></Link>
             <nav>
               <ul>
                 <li>
                   <a href="#home">Home</a>
                 </li>
                 <li>
-                  <a href="#tours">Tours</a>
+                  <a href="#packages">Tours</a>
                 </li>
                 <li>
                   <a href="#about">About</a>

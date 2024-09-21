@@ -1,14 +1,15 @@
 import Contact from "./layout/Contact";
 import About from "./layout/About";
-import Explore from "./layout/Explore";
 import Packages from "./layout/Packages";
-import Footer from "./layout/Footer";
 import { useEffect } from "react";
 const Home = () => {
   useEffect(() => {
+    window.scrollTo(0, 0)
     const header = document.querySelector("header");
     const logotext = document.querySelector(".header h1 ");
     const logo = document.querySelector(".logo");
+
+    
 
     window.addEventListener("scroll", () => {
       header.classList.toggle("sticky", window.scrollY > 0);
@@ -32,7 +33,7 @@ const Home = () => {
                     <a href="#home">Home</a>
                   </li>
                   <li>
-                    <a href="#tours">Tours</a>
+                    <a href="#packages">Tours</a>
                   </li>
                   <li>
                     <a href="#about">About</a>
@@ -62,11 +63,9 @@ const Home = () => {
           </div>
         </section>
       </section>
-      <Explore />
       <Packages />
       <About />
       <Contact />
-      <Footer />
     </>
   );
 };
