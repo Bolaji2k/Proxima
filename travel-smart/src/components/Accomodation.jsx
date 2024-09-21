@@ -1,6 +1,36 @@
 import { useEffect } from "react";
 import "../assets/css/accomodation.css";
 import Header from "./layout/Header";
+import main from "../assets/photos/main.jpeg";
+import reviewTag from "../assets/icons/review-tag.png";
+import host1 from "../assets/photos/host1.jpeg";
+import trophy from "../assets/icons/trophy.jpeg";
+import house from "../assets/icons/house.jpeg";
+import room from "../assets/icons/room.jpeg";
+import shower from "../assets/icons/shower.jpeg"
+import small1 from "../assets/photos/small1.jpeg"
+import small2 from "../assets/photos/small2.jpeg";
+import utensils from "../assets/icons/utensils.jpeg"
+import workspace from "../assets/icons/workspace.jpeg"
+import wifi from "../assets/icons/wifi.jpeg"
+import tv from "../assets/icons/tv.jpeg"
+import lock from "../assets/icons/lock.jpeg"
+import leftleaf from "../assets/icons/leftleaf.png"
+import rightleaf from "../assets/icons/rightleaf.png"
+import spray from "../assets/icons/spray.png"
+import tick from "../assets/icons/tick.png";
+import key from "../assets/icons/key.png";
+import callout from "../assets/icons/callout.png";
+import map from "../assets/icons/map.png";
+import priceTag from "../assets/icons/price-tag.png";
+import person1 from "../assets/photos/person1.jpeg";
+import person2 from "../assets/photos/person2.jpeg";
+import person3 from "../assets/photos/person3.jpeg";
+import person4 from "../assets/photos/person4.jpeg";
+import person5 from "../assets/photos/person5.jpeg";
+import person7 from "../assets/photos/person7.jpeg";
+
+
 
 const Accomodation = () => {
 
@@ -19,16 +49,16 @@ const Accomodation = () => {
             <div className="review-image-gallery">
               <div className="review-main-image">
                 <img
-                  src="photos/main.jpeg"
+                  src={main}
                   alt="Main Image of the Airbnb Listing"
                 />
               </div>
               <div className="review-small-images">
                 <div>
-                  <img src="photos/small1.jpeg" alt="Small Image 1" />
+                  <img src="https://a0.muscache.com/im/pictures/miso/Hosting-597616187043694433/original/e38a5504-c1e1-413c-a388-ef0c8ba51674.jpeg?im_w=720" alt="Small Image 1" />
                 </div>
                 <div>
-                  <img src="photos/small2.jpeg" alt="Small Image 2" />
+                  <img src="https://a0.muscache.com/im/pictures/miso/Hosting-597616187043694433/original/c04cd2ac-1c47-4738-ac34-ea813700397d.jpeg?im_w=720" alt="Small Image 2" />
                 </div>
               </div>
               <div
@@ -36,10 +66,10 @@ const Accomodation = () => {
                 style={{ marginTop: "-5px" }}
               >
                 <div>
-                  <img src="photos/small3.jpeg" alt="Small Image 3" />
+                  <img src="https://a0.muscache.com/im/pictures/miso/Hosting-597616187043694433/original/94634bf0-9726-4a49-902c-beedfc5a0bda.jpeg?im_w=720" alt="Small Image 3" />
                 </div>
                 <div>
-                  <img src="photos/small1.jpeg" alt="Small Image 4" />
+                  <img src="https://a0.muscache.com/im/pictures/miso/Hosting-597616187043694433/original/811ae0a3-64ac-44e6-86f3-09371aff48a6.jpeg?im_w=720" alt="Small Image 4" />
                 </div>
               </div>
             </div>
@@ -96,7 +126,7 @@ const Accomodation = () => {
                 <div className="review-price-note">
                   <div>
                     <img
-                      src="icons/review-tag.png"
+                      src={reviewTag}
                       alt=""
                       className="review-price-note-tag"
                     />
@@ -142,7 +172,7 @@ const Accomodation = () => {
                   </div>
                   <div className="review-host">
                     <div className="review-host-image">
-                      <img src="photos/host1.jpeg" alt="Host Image" />
+                      <img src={host1} alt="Host Image" />
                     </div>
                     <div className="review-host-name">
                       <h3>Hosted by Catherine</h3>
@@ -154,7 +184,7 @@ const Accomodation = () => {
                 <div className="review-features">
                   <div className="review-sub-features">
                     <div>
-                      <img src="icons/trophy.jpeg" alt="" />
+                      <img src={trophy} alt="" />
                     </div>
                     <div>
                       <h3>Top 10% of homes</h3>
@@ -166,7 +196,7 @@ const Accomodation = () => {
                   </div>
                   <div className="review-sub-features">
                     <div>
-                      <img src="icons/room.jpeg" alt="" />
+                      <img src={room} alt="" />
                     </div>
                     <div>
                       <h3>Room in a home</h3>
@@ -177,7 +207,7 @@ const Accomodation = () => {
                   </div>
                   <div className="review-sub-features">
                     <div>
-                      <img src="icons/house.jpeg" alt="" />
+                      <img src={house} alt="" />
                     </div>
                     <div>
                       <h3>Shared common Spaces</h3>
@@ -186,7 +216,7 @@ const Accomodation = () => {
                   </div>
                   <div className="review-sub-features">
                     <div>
-                      <img src="icons/shower.jpeg" alt="" />
+                      <img src={shower} alt="" />
                     </div>
                     <div>
                       <h3>Dedicated bathroom</h3>
@@ -214,12 +244,12 @@ const Accomodation = () => {
                   <h2>Where you'll sleep</h2>
                   <div className="review-beds">
                     <div className="review-bed-info">
-                      <img src="photos/small1.jpeg" alt="" />
+                      <img src={small1} alt="" />
                       <h4>Bedroom 1</h4>
                       <p>1 queen bed</p>
                     </div>
                     <div className="review-bed-info">
-                      <img src="photos/small2.jpeg" alt="" />
+                      <img src={small2} alt="" />
                       <h4>Bedroom 2</h4>
                       <p>1 King bed</p>
                     </div>
@@ -231,25 +261,25 @@ const Accomodation = () => {
                   <div className="review-amenities">
                     <div>
                       <div className="review-amemities-description">
-                        <img src="icons/utensils.jpeg" alt="" />
+                        <img src={utensils} alt="" />
                         <p>Kitchen</p>
                       </div>
                       <div className="review-amemities-description">
-                        <img src="icons/workspace.jpeg" alt="" />
+                        <img src={workspace} alt="" />
                         <p>Dedicated Workspace</p>
                       </div>
                       <div className="review-amemities-description">
-                        <img src="icons/lock.jpeg" alt="" />
+                        <img src={lock} alt="" />
                         <p>Lock on bedroom door</p>
                       </div>
                     </div>
                     <div className="amenities-row-two">
                       <div className="review-amemities-description">
-                        <img src="icons/wifi.jpeg" alt="" />
+                        <img src={wifi} alt="" />
                         <p>Wifi</p>
                       </div>
                       <div className="review-amemities-description">
-                        <img src="icons/tv.jpeg" alt="" />
+                        <img src={tv} alt="" />
                         <p>TV</p>
                       </div>
                     </div>
@@ -257,7 +287,7 @@ const Accomodation = () => {
                 </div>
                 <div className="review-cross-line"></div>
                 <div className="review-calendar">
-                  <h2>5 nights in Greater London</h2>
+                  <h2>4 nights in Greater London</h2>
                   <p id="review-selected-dates">Jan 20, 2025 - Feb 3, 2025</p>
                   <div className="review-calendar-inputs">
                     <input
@@ -279,13 +309,13 @@ const Accomodation = () => {
             <div className="review-rating-head">
               <div className="rating-header">
                 <img
-                  src="icons/leftleaf.png"
+                  src={leftleaf}
                   alt="left leaf"
                   className="leaf-icon"
                 />
                 <h1 className="rating-score">4.97</h1>
                 <img
-                  src="icons/rightleaf.png"
+                  src={rightleaf}
                   alt="right leaf"
                   className="leaf-icon"
                 />
@@ -326,7 +356,7 @@ const Accomodation = () => {
                   <p>5.0</p>
                 </div>
                 <div className="review-small-board-icon">
-                  <img src="icons/spray.png" alt="" />
+                  <img src={spray} alt="" />
                 </div>
               </div>
               <div className="review-rating-horizontal-line"></div>
@@ -336,7 +366,7 @@ const Accomodation = () => {
                   <p>5.0</p>
                 </div>
                 <div className="review-small-board-icon">
-                  <img src="icons/tick.png" alt="" />
+                  <img src={tick} alt="" />
                 </div>
               </div>
               <div className="review-rating-horizontal-line"></div>
@@ -346,7 +376,7 @@ const Accomodation = () => {
                   <p>4.9</p>
                 </div>
                 <div className="review-small-board-icon">
-                  <img src="icons/key.png" alt="" />
+                  <img src={key} alt="" />
                 </div>
               </div>
               <div className="review-rating-horizontal-line"></div>
@@ -356,7 +386,7 @@ const Accomodation = () => {
                   <p>5.0</p>
                 </div>
                 <div className="review-small-board-icon">
-                  <img src="icons/callout.png" alt="" />
+                  <img src={callout} alt="" />
                 </div>
               </div>
               <div className="review-rating-horizontal-line"></div>
@@ -366,7 +396,7 @@ const Accomodation = () => {
                   <p>4.8</p>
                 </div>
                 <div className="review-small-board-icon">
-                  <img src="icons/map.png" alt="" />
+                  <img src={map} alt="" />
                 </div>
               </div>
               <div className="review-rating-horizontal-line"></div>
@@ -376,7 +406,7 @@ const Accomodation = () => {
                   <p>4.9</p>
                 </div>
                 <div className="review-small-board-icon">
-                  <img src="icons/price-tag.png" alt="" />
+                  <img src={priceTag} alt="" />
                 </div>
               </div>
             </div>
@@ -385,7 +415,7 @@ const Accomodation = () => {
               <div className="review-comment-row-one">
                 <div className="reviewer-info">
                   <img
-                    src="photos/person4.jpeg"
+                    src={person4}
                     alt="Elena's profile picture"
                     className="reviewer-profile-pic"
                   />
@@ -404,7 +434,7 @@ const Accomodation = () => {
                 </div>
                 <div className="reviewer-info">
                   <img
-                    src="photos/person1.jpeg"
+                    src={person1}
                     alt="Elena's profile picture"
                     className="reviewer-profile-pic"
                   />
@@ -423,7 +453,7 @@ const Accomodation = () => {
                 </div>
                 <div className="reviewer-info">
                   <img
-                    src="photos/person3.jpeg"
+                    src={person3}
                     alt="Elena's profile picture"
                     className="reviewer-profile-pic"
                   />
@@ -446,7 +476,7 @@ const Accomodation = () => {
               <div className="review-comment-row-two">
                 <div className="reviewer-info">
                   <img
-                    src="photos/person5.jpeg"
+                    src={person5}
                     alt="Elena's profile picture"
                     className="reviewer-profile-pic"
                   />
@@ -466,7 +496,7 @@ const Accomodation = () => {
                 </div>
                 <div className="reviewer-info">
                   <img
-                    src="photos/person2.jpeg"
+                    src={person2}
                     alt="Elena's profile picture"
                     className="reviewer-profile-pic"
                   />
@@ -485,7 +515,7 @@ const Accomodation = () => {
                 </div>
                 <div className="reviewer-info">
                   <img
-                    src="photos/person7.jpeg"
+                    src={person7}
                     alt="Elena's profile picture"
                     className="reviewer-profile-pic"
                   />
