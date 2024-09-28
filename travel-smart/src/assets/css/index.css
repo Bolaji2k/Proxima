@@ -5,6 +5,12 @@
   box-sizing: border-box;
 }
 
+html,
+body {
+   scroll-behavior: smooth;
+}
+
+
 body {
   font-family: "Poppins", sans-serif;
   font-weight: 400;
@@ -43,7 +49,7 @@ a {
   color: #046aae !important;
 }
 
-.header i {
+.header .logo {
   display: inline-block;
   width: 24px;
   height: 24px;
@@ -76,8 +82,8 @@ header {
   width: 100%;
   align-items: center;
   justify-content: center;
-  z-index: 999;
   transition: ease 0.4s;
+  z-index: 99;
 }
 
 header h1 {
@@ -133,6 +139,7 @@ header.sticky {
 #explore h2 {
   font-size: 2rem;
   margin-bottom: 20px;
+  text-align: center;
 }
 
 #explore .container {
@@ -170,6 +177,7 @@ header.sticky {
   margin-top: 20px;
   display: flex;
   align-items: center;
+  justify-content: space-between;
   gap: 5px;
   background-color: #ffffff;
   width: 55%;
@@ -186,13 +194,9 @@ header.sticky {
 }
 
 #search-bar button {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   background-color: #046aae;
   color: #ffffff;
-  height: 50px;
-  width: 50px;
+  padding: 15px;
   border-radius: 50%;
   border: none;
   cursor: pointer;
@@ -200,7 +204,7 @@ header.sticky {
 }
 
 #search-bar button:hover {
-  width: 100px;
+  padding: 15px 30px;
   border-radius: 40px;
   background-color: #0f598b;
   color: #ffffff;
@@ -209,7 +213,7 @@ header.sticky {
 .input {
   padding: 15px 30px;
   background-color: inherit;
-  width: 100%;
+  width: max-content;
   line-height: 1.2;
   border-radius: 40px;
 }
@@ -318,6 +322,7 @@ footer {
   justify-content: space-between;
   text-align: left;
   padding: 20px 0;
+  flex-wrap: wrap;
 }
 
 .footer-details div {
@@ -355,7 +360,7 @@ footer {
 }
 
 .contact-company-name p {
-  width: 350px;
+  max-width: 350px;
 }
 
 .contact-company-name a {
@@ -864,39 +869,39 @@ input[type="date"] {
   margin-bottom: 20px;
 }
 .flight-card {
-background-color: aliceblue;
-border: 1px solid #0073cf;
-border-radius: 10px;
-box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-margin: 20px auto;
-padding: 20px;
-width: 80%;
-max-width: 600px;
+  background-color: aliceblue;
+  border: 1px solid #0073cf;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  margin: 20px auto;
+  padding: 20px;
+  width: 80%;
+  max-width: 600px;
 }
 .flight-info {
-margin-right: 10px;
+  margin-right: 10px;
 }
 .flight-details {
-margin-bottom: 20px;
-display: flex;
-justify-content: space-between;
-align-items: center;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 .flight-route {
-font-size: 1.5em;
-font-weight: bold;
+  font-size: 1.5em;
+  font-weight: bold;
 }
 .flight-time {
-color: #555;
-margin-top: 5px;
+  color: #555;
+  margin-top: 5px;
 }
 .info {
-font-size: larger;
-display: flex;
-align-items: center;
-gap: 5px;
-vertical-align: middle;
-margin-left: 10px;
+  font-size: larger;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  vertical-align: middle;
+  margin-left: 10px;
 }
 
 .info img {
@@ -904,12 +909,154 @@ margin-left: 10px;
   height: 40px;
 }
 .inf {
-font-size: 35px;
-margin-right: 20px;
+  font-size: 35px;
+  margin-right: 20px;
 }
 svg {
-width: 40px;
-display: inline-block;
-border-radius: 50px;
-vertical-align: middle;
+  width: 40px;
+  display: inline-block;
+  border-radius: 50px;
+  vertical-align: middle;
+}
+
+.header > i {
+  display: none;
+}
+
+nav ul li a:hover {
+  color: #046aae !important;
+}
+
+@media (width < 768px) {
+  .header > i {
+    display: block;
+    z-index: 10;
+  }
+
+  header {
+    padding: 0;
+  }
+
+  header .container {
+    width: 100%;
+  }
+
+  .logo {
+      background: url("../images/travel-smart-logo.png") no-repeat center !important;
+      background-size: 100% !important;
+  }
+
+  .header h1 {
+    color: #046aae !important;
+  }
+
+  .header {
+    padding: 10px 10%;
+    z-index: 1;
+    overflow: hidden;
+    background-color: #ffffff;
+    width: 100%;
+    color: #000000;
+  }
+  
+  nav {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color:#030303;
+    z-index: -1;
+    transition: transform 0.5s;
+    background-color: #fff;
+  }
+
+  nav.open {
+    transform: translateY(100%);
+  }
+
+  nav ul {
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-block: 1.5rem;
+  }
+ 
+
+  .subscribe {
+   flex-basis: 100%; 
+  }
+
+  .subscribe button {
+    width: 100%;
+    max-width: 280px;
+  }
+
+  .subscribe input {
+    width: 100%;
+    max-width: 280px;
+  }
+
+  .about-box {
+    width: 100%;
+    gap: 10px;
+  }
+
+  .about-box-container {
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+
+  .about-us-container div {
+    width: 100%;
+    flex-wrap: wrap;
+  }
+  .about-us-container {
+    flex-wrap: wrap;
+  }
+
+.what-we-do {
+  flex-wrap: wrap;
+}
+
+  .about-div {
+    width: 100%;
+  }
+  .footer-details { 
+    gap: 1.5rem;
+  }
+
+  footer .footer-details {
+    display: block;
+  }
+
+  .footer-logo {
+    justify-content: center;
+  }
+
+  .copyright {
+    display: block;
+  }
+
+  .d-flex {
+  display: none; 
+  }
+ #search-bar {
+  width: 100%;
+  justify-content: space-between;
+  }
+
+  .input {
+    width: 80%;
+  }
+
+  .search-navigation ul li {
+    display: block;
+  }
+  
+}
+
+
+@media (width < 1024px) {
 }

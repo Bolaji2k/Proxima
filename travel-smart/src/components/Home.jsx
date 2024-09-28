@@ -4,12 +4,27 @@ import Packages from "./layout/Packages";
 import { useEffect } from "react";
 const Home = () => {
   useEffect(() => {
-    window.scrollTo(0, 0)
+    window.scrollTo(0, 0);
     const header = document.querySelector("header");
     const logotext = document.querySelector(".header h1 ");
     const logo = document.querySelector(".logo");
 
-    
+    const menuBtn = document.getElementById("menu-btn");
+    const nav = document.getElementById("nav");
+
+    menuBtn.onclick = (e) => {
+      nav.classList.toggle("open");
+
+      const isOpen = nav.classList.contains("open");
+      menuBtn.setAttribute(
+        "class",
+        isOpen ? "fa-solid fa-xmark": "fa-solid fa-bars"
+      );
+    };
+
+    nav.onclick = (e) => {
+      menuBtn.setAttribute("class", "fa-solid fa-bars");
+    };
 
     window.addEventListener("scroll", () => {
       header.classList.toggle("sticky", window.scrollY > 0);
@@ -27,8 +42,9 @@ const Home = () => {
                 <i className="logo"></i>
                 TravelSmart
               </h1>
-              <nav>
-                <ul>
+              <i className="fa-solid fa-bars"  id="menu-btn"></i>
+              <nav id="nav">
+                <ul >
                   <li>
                     <a href="#home">Home</a>
                   </li>
@@ -44,9 +60,9 @@ const Home = () => {
                 </ul>
               </nav>
             </div>
+           
           </div>
-        </header>
-
+        </header> 
         <section id="hero">
           <div className="container">
             <h2>Discover Your Next Adventure</h2>

@@ -76,7 +76,6 @@
 
 .tourcard {
     display: flex;
-    padding: 0 30px;
     justify-content: space-between;
     flex-wrap: wrap;
 }

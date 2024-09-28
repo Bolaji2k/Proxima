@@ -85,9 +85,9 @@ const Packages = () => {
         <button className="dropbtn" >Price <span className="toggle-arrow" style={{marginLeft: '10px' }}>▼</span></button>
         <div className="dropdown-content">
             <div className="filter-options">
-                <label for="minPrice">Min: ₦</label>
+                <label htmlFor="minPrice">Min: ₦</label>
                 <input type="number" id="minPrice" name="minPrice" value="0" />
-                <label for="maxPrice">Max: ₦</label>
+                <label htmlFor="maxPrice">Max: ₦</label>
                 <input type="number" id="maxPrice" name="maxPrice" value="1000" />
                 <button className="done-btn">Done</button>
             </div>
@@ -98,9 +98,9 @@ const Packages = () => {
         <button className="dropbtn">Date <span className="toggle-arrow" style={{marginLeft: '10px' }}>▼</span></button>
         <div className="dropdown-content">
           
-                <label for="startDate">Start Date:</label>
+                <label htmlFor="startDate">Start Date:</label>
                 <input type="date" id="startDate" name="startDate" />
-                <label for="endDate">End Date:</label>
+                <label htmlFor="endDate">End Date:</label>
                 <input type="date" id="endDate" name="endDate" />
                 <button className="done-btn">Done</button>
             </div>
